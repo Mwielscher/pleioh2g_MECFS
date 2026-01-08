@@ -22,7 +22,12 @@ This repository accompanies the manuscript __"Insights into Pathophysiological P
 <br/>
 
 
-This repository contains a reproducible, HPC-friendly implementation of the   **Pleiotropic Heritability Block Correction (PHBC)** framework and was used to generate **Figure 1B**
+This repository contains a reproducible, HPC-friendly implementation of the   **Pleiotropic Heritability Block Correction (PHBC)** framework and was used to generate **Figure 1B**  
+
+__The implementation is based on the methodology and core code described in:__
+>* [__pleioh2g preprint:__](https://doi.org/10.1101/2025.06.10.25329261) https://doi.org/10.1101/2025.06.10.25329261  
+>* [__Original code:__](https://github.com/cran/pleioh2g) https://github.com/cran/pleioh2g  
+
 
 ## LDSC
 LDSC generates scores reflecting whether the GWAS test statistic of a biologically relevant variant correlates with nearby variants in high linkage disequilibrium. The z statistic for the genetic association of each variant with trait 1 are multiplied with the z statistic for the genetic association with trait 2, followed by regression of this product of statistics against the LD scores. The slope (coefficient) represents genetic correlation. When large, the same genetic variants impact both the traits.
