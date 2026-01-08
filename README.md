@@ -2,7 +2,7 @@
 1. [About this Repository](#About-this-Repository)
 2. [Overview](#Overview)
 3. [Step 1–2: LDSC estimation](#Step_1–2:LDSC_estimation)
-4. [Mendelian_Randomisation](#Mendelian_Randomisation)
+4. [Step 3: PHBC_modelling](#Step_3:PHBC_modelling)
 5. [PRS_CS](#PRS_CS)
 4. [UKB_PheWAS](#UKB_PheWAS)
 5. [All_of_Us_PheWAS](#All_of_Us_PheWAS)
@@ -58,6 +58,29 @@ Because the original *pleioh2g* R package was difficult to install and the wrapp
 >>* Summary tables used for downstream analyses and figures
 
 This step produces the genetic correlation estimates shown in **Figure 1A** of the manuscript.
+
+
+## Step_3:PHBC_modelling 
+
+[__Script__](code/PHBC_step3_pleioh2g_biofunctions.R)  
+
+>* **Purpose:**  
+>>* Applies the PHBC model to decompose trait heritability into:
+>>>* Trait-specific components
+>>>* Shared pleiotropic components across traits
+
+>* **Analyses performed:** 
+>>* Single-trait PHBC models (pairwise with the target trait)
+>>* Leave-one-out models excluding each auxiliary trait in turn
+>>* A full multi-trait PHBC model including all traits
+
+>* **Outputs:**
+>>* Estimates of shared pleiotropic heritability
+>>* Leave-one-out differences used to infer domain-specific pleiotropic contributions
+
+These results are summarized in **Figure 1B** of the manuscript.
+
+
 
 
 
