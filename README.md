@@ -35,7 +35,7 @@ PHBC extends LD Score Regression by partitioning SNP-based heritability into tra
 Because the original *pleioh2g* R package was difficult to install and the wrapper functions did not run reliably in our environment, we implemented a lightweight pipeline that directly uses the underlying functions while adding:  
 >* Robust job submission on HPC/SLURM systems  
 >* Explicit control over LDSC and jackknife steps  
->* Reproducible software [deployment via Docker](https://hub.docker.com/r/mwielsch/pleioh2g)  
+>* Reproducible software [__deployment via Docker__](https://hub.docker.com/r/mwielsch/pleioh2g)    
 
 
 
