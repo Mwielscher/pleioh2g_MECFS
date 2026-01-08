@@ -1,8 +1,8 @@
 ## Table of contents
 1. [About this Repository](#About-this-Repository)
 2. [Overview](#Overview)
-3. [Step_1–2:_LDSC_estimation](#Step_1_2_LDSC_estimation)
-4. [Step_3:_PHBC_modelling](#Step_3_PHBC_modelling)
+3. [Step_1–2: LDSC_estimation](#Step_1&2_LDSC_estimation)
+4. [Step_3: PHBC_modelling](#Step_3_PHBC_modelling)
 5. [PRS_CS](#PRS_CS)
 4. [UKB_PheWAS](#UKB_PheWAS)
 5. [All_of_Us_PheWAS](#All_of_Us_PheWAS)
@@ -39,7 +39,7 @@ Because the original *pleioh2g* R package was difficult to install and the wrapp
 
 
 
-## Step_1_2_LDSC_estimation 
+## Step_1&2_LDSC_estimation 
 
 [__Script__](code/PHBC_step1_2_ldsc.R)  
 
