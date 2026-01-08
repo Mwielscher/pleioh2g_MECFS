@@ -32,7 +32,7 @@ __The implementation is based on the methodology and core code described in:__
 ## Overview
 PHBC extends LD Score Regression by partitioning SNP-based heritability into trait-specific and shared pleiotropic components across multiple traits.This repository provides a **modular two-step pipeline** that applies PHBC at scale, enabling leave-one-out and multi-trait analyses in distributed computing environments.  
 <p>
-Because the original *pleioh2g* R package was difficult to install and the wrapper functions did not run reliably in our environment, we implemented a lightweight pipeline that directly uses the underlying functions while adding:  
+Because the original *pleioh2g* R package was difficult to install and the wrapper functions did not run reliably in our environment, we implemented a lightweight pipeline that directly uses the underlying functions while adding:
 >* Robust job submission on HPC/SLURM systems  
 >* Explicit control over LDSC and jackknife steps  
 >* Reproducible software [__deployment via Docker__](https://hub.docker.com/r/mwielsch/pleioh2g)    
