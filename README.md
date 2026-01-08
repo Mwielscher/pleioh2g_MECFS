@@ -1,6 +1,6 @@
 ## Table of contents
 1. [About this Repository](#About-this-Repository)
-2. [LDSC](#LDSC)
+2. [Overview](#Overview)
 3. [MultiVar_GWAS](#MultiVar_GWAS)
 4. [Mendelian_Randomisation](#Mendelian_Randomisation)
 5. [PRS_CS](#PRS_CS)
@@ -29,8 +29,15 @@ __The implementation is based on the methodology and core code described in:__
 >* [__Original code:__](https://github.com/cran/pleioh2g) https://github.com/cran/pleioh2g  
 
 
-## LDSC
-LDSC generates scores reflecting whether the GWAS test statistic of a biologically relevant variant correlates with nearby variants in high linkage disequilibrium. The z statistic for the genetic association of each variant with trait 1 are multiplied with the z statistic for the genetic association with trait 2, followed by regression of this product of statistics against the LD scores. The slope (coefficient) represents genetic correlation. When large, the same genetic variants impact both the traits.
+## Overview
+PHBC extends LD Score Regression by partitioning SNP-based heritability into trait-specific and shared pleiotropic components across multiple traits.This repository provides a **modular two-step pipeline** that applies PHBC at scale, enabling leave-one-out and multi-trait analyses in distributed computing environments.  
+<p>
+Because the original *pleioh2g* R package was difficult to install and the wrapper functions did not run reliably in our environment, we implemented a lightweight pipeline that directly uses the underlying functions while adding:  
+>* Robust job submission on HPC/SLURM systems  
+>* Explicit control over LDSC and jackknife steps  
+>* Reproducible software [deployment via Docker](https://hub.docker.com/r/mwielsch/pleioh2g)  
+
+
 
 ## MultiVar_GWAS  
 We incorporated 21 sets of summary statistics, totaling 3.5 million SNPs, into our structural multivariable regression model. All models were based on samples of European ancestry or trans-ethnic meta-analyses, with European linkage disequilibrium maps as references.
