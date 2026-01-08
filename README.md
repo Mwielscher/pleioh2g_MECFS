@@ -1,12 +1,9 @@
 ## Table of contents
 1. [About this Repository](#About-this-Repository)
 2. [Overview](#Overview)
-3. [Step_1–2: LDSC_estimation](#Step_1&2_LDSC_estimation)
+3. [Step_1&2: LDSC_estimation](#Step_1_2_LDSC_estimation)
 4. [Step_3: PHBC_modelling](#Step_3_PHBC_modelling)
-5. [PRS_CS](#PRS_CS)
-4. [UKB_PheWAS](#UKB_PheWAS)
-5. [All_of_Us_PheWAS](#All_of_Us_PheWAS)
-6. [Nigthshift_stratified](#Nigthshift_stratified)
+5. [HPC execution](#HPC_execution)
 
 ## About this Repository
 This repository accompanies the manuscript __"Insights into Pathophysiological Pathways in ME/CFS Through Genetic Correlation and Mendelian Randomization"__
@@ -39,7 +36,7 @@ Because the original *pleioh2g* R package was difficult to install and the wrapp
 
 
 
-## Step_1&2_LDSC_estimation 
+## Step_1_2_LDSC_estimation 
 
 [__Script__](code/PHBC_step1_2_ldsc.R)  
 
@@ -80,7 +77,11 @@ This step produces the genetic correlation estimates shown in **Figure 1A** of t
 
 These results are summarized in **Figure 1B** of the manuscript.
 
+## HPC_execution  
 
+[__Script__](code/submit_R_scripts_to_SLURM.sh)  
+
+Provides an example SLURM submission workflow for running the pipeline on distributed systems. The pipeline is modular and can be adapted to other job schedulers with minimal changes.
 
 
 
