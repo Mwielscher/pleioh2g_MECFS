@@ -43,5 +43,21 @@ Because the original *pleioh2g* R package was difficult to install and the wrapp
 
 [__Script__](code/PHBC_step1_2_ldsc.R)  
 
+>* **Purpose:**  
+>>* Computes SNP-based heritability and pairwise genetic correlations between a target trait (e.g. ME/CFS) and a panel of auxiliary traits using LDSC.
+
+>* **Inputs:**
+>>* Pre-munged GWAS summary statistics (`*.sumstats.gz`)
+>>* LD score reference files
+>>* Sample and population prevalence estimates (for liability-scale correction)
+
+>* **Outputs:**
+>>* LDSC heritability and genetic correlation estimates
+>>* Jackknife-based standard errors
+>>* Intermediate `.rds` files used by PHBC
+>>* Summary tables used for downstream analyses and figures
+
+This step produces the genetic correlation estimates shown in **Figure 1A** of the manuscript.
+
 
 
