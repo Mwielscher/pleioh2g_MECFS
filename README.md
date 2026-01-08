@@ -81,7 +81,6 @@ These results are summarized in **Figure 1B** of the manuscript.
 
 [__Script__](code/submit_R_scripts_to_SLURM.sh)  
 
-Provides an example SLURM submission workflow for running the pipeline on distributed systems. The pipeline is modular and can be adapted to other job schedulers with minimal changes.
-
+Provides an example SLURM submission workflow for running the pipeline on distributed systems. The pipeline is modular and can be adapted to other job schedulers with minimal changes. To avoid installation issues with *pleioh2g* and its dependencies, the entire pipeline is containerized.
 
 
