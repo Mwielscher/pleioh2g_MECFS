@@ -1,8 +1,8 @@
 ## Table of contents
 1. [About this Repository](#About-this-Repository)
 2. [Overview](#Overview)
-3. [Step 1–2: LDSC estimation](#Step_1–2:LDSC_estimation)
-4. [Step 3: PHBC_modelling](#Step_3:PHBC_modelling)
+3. [Step_1–2:LDSC_estimation](#Step_1–2:LDSC_estimation)
+4. [Step_3:PHBC_modelling](#Step_3:PHBC_modelling)
 5. [PRS_CS](#PRS_CS)
 4. [UKB_PheWAS](#UKB_PheWAS)
 5. [All_of_Us_PheWAS](#All_of_Us_PheWAS)
@@ -66,8 +66,8 @@ This step produces the genetic correlation estimates shown in **Figure 1A** of t
 
 >* **Purpose:**  
 >>* Applies the PHBC model to decompose trait heritability into:
->>>* Trait-specific components
->>>* Shared pleiotropic components across traits
+>>* Trait-specific components
+>>* Shared pleiotropic components across traits
 
 >* **Analyses performed:** 
 >>* Single-trait PHBC models (pairwise with the target trait)
