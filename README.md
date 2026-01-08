@@ -11,9 +11,8 @@
 ## About this Repository
 This repository accompanies the manuscript __"Insights into Pathophysiological Pathways in ME/CFS Through Genetic Correlation and Mendelian Randomization"__
 <br/><br/> <br/>
-
 <p align="center">
-<img src="/img/figure_1.png" alt="Overview Figure" width="600"/>
+<img src="/img/Fig_1_plusPHBC_final.png" alt="Figure 1" width="600"/>
 <br/><br/>
 
 
